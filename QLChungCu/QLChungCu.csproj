@@ -82,19 +82,19 @@
   <ItemGroup>
     <Compile Include="BUS\ExcelService.cs" />
     <Compile Include="BUS\Service.cs" />
-    <Compile Include="CanHo.cs" />
-    <Compile Include="ChungCuModel.cs" />
-    <Compile Include="DichVu.cs" />
-    <Compile Include="FrmMainDashboard.cs">
+    <Compile Include="DAL\CanHo.cs" />
+    <Compile Include="DAL\ChungCuModel.cs" />
+    <Compile Include="DAL\DichVu.cs" />
+    <Compile Include="GUI\FrmMainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMainDashboard.Designer.cs">
+    <Compile Include="GUI\FrmMainDashboard.Designer.cs">
       <DependentUpon>FrmMainDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTrangChu.cs">
+    <Compile Include="GUI\FrmTrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTrangChu.Designer.cs">
+    <Compile Include="GUI\FrmTrangChu.Designer.cs">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmHoaDon.cs">
@@ -139,10 +139,10 @@
     <Compile Include="GUI\FrmTinhTien.Designer.cs">
       <DependentUpon>FrmTinhTien.cs</DependentUpon>
     </Compile>
-    <Compile Include="HoaDon.cs" />
-    <Compile Include="HopDong.cs" />
-    <Compile Include="KhachHang.cs" />
-    <Compile Include="LoaiCanHo.cs" />
+    <Compile Include="DAL\HoaDon.cs" />
+    <Compile Include="DAL\HopDong.cs" />
+    <Compile Include="DAL\KhachHang.cs" />
+    <Compile Include="DAL\LoaiCanHo.cs" />
     <Compile Include="Migrations\202512211829475_InitDB.cs" />
     <Compile Include="Migrations\202512211829475_InitDB.Designer.cs">
       <DependentUpon>202512211829475_InitDB.cs</DependentUpon>
@@ -150,13 +150,13 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SuDungDichVu.cs" />
-    <Compile Include="TaiKhoan.cs" />
-    <Compile Include="ToaNha.cs" />
-    <EmbeddedResource Include="FrmMainDashboard.resx">
+    <Compile Include="DAL\SuDungDichVu.cs" />
+    <Compile Include="DAL\TaiKhoan.cs" />
+    <Compile Include="DAL\ToaNha.cs" />
+    <EmbeddedResource Include="GUI\FrmMainDashboard.resx">
       <DependentUpon>FrmMainDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTrangChu.resx">
+    <EmbeddedResource Include="GUI\FrmTrangChu.resx">
       <DependentUpon>FrmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmHoaDon.resx">
@@ -207,9 +207,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
